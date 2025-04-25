@@ -9,7 +9,7 @@ public class MedicoInsertFrame extends JFrame {
     private JTextField txtNombre, txtEspecialidad;
     private JButton btnSave, btnCancel;
 
-    public MedicoInsertFrame() {
+    public MedicoInsertFrame(Integer id) {
         super("Nuevo Médico");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(new GridLayout(3, 2, 5, 5));

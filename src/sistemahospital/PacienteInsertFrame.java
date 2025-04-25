@@ -13,7 +13,7 @@ public class PacienteInsertFrame extends JFrame {
                        txtContacto, txtCorreo, txtDireccion;
     private JButton btnSave, btnCancel;
 
-    public PacienteInsertFrame() {
+    public PacienteInsertFrame(Integer id) {
         super("Nuevo Paciente");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(new GridLayout(9, 2, 5, 5));

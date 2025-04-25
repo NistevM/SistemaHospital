@@ -22,7 +22,7 @@ public class DiagnosticoInsertFrame extends JFrame {
     private static final DateTimeFormatter DATE_FMT = DateTimeFormatter.ofPattern("dd/MM/yy");
     private static final DateTimeFormatter TIME_FMT = DateTimeFormatter.ofPattern("HH:mm");
 
-    public DiagnosticoInsertFrame() {
+    public DiagnosticoInsertFrame(Integer id) {
         super("Nuevo Diagnóstico");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(new GridBagLayout());

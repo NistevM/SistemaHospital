@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class DashboardFrame extends JFrame {
-    private JButton btnPacientes, btnMedicos, btnDiagnosticos, btnUsuarios, btnBuscarPaciente;
+    private JButton btnPacientes, btnMedicos, btnDiagnosticos, btnUsuarios;
 
     public DashboardFrame() {
         super("SGI - Panel Principal");
@@ -22,13 +22,13 @@ public class DashboardFrame extends JFrame {
         btnMedicos = new JButton("Médicos");
         btnDiagnosticos = new JButton("Diagnósticos");
         btnUsuarios = new JButton("Usuarios");
-        btnBuscarPaciente = new JButton("Buscar Paciente");
+        //btnBuscarPaciente = new JButton("Buscar Paciente");
 
         panel.add(btnPacientes);
         panel.add(btnMedicos);
         panel.add(btnDiagnosticos);
         panel.add(btnUsuarios);
-        panel.add(btnBuscarPaciente);
+        //panel.add(btnBuscarPaciente);
 
         add(panel);
 
@@ -36,10 +36,10 @@ public class DashboardFrame extends JFrame {
         btnMedicos.addActionListener(e -> openTable("medico"));
         btnDiagnosticos.addActionListener(e -> openTable("diagnostico"));
         btnUsuarios.addActionListener(e -> openTable("usuario"));
-        btnBuscarPaciente.addActionListener(e -> {
-            dispose();
-            new BuscarPaciente().setVisible(true);
-        });
+        //btnBuscarPaciente.addActionListener(e -> {
+           // dispose();
+           // new BuscarPaciente().setVisible(true);
+      //  });
     }
 
     private void openTable(String tableName) {
